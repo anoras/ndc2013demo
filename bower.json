@@ -1,0 +1,7 @@
+{
+    "name": "NDC2013 ",
+    "version": "0.0.1",
+    "dependencies": {
+        "quintus": ">=0.1.4"
+    }
+}

@@ -1,0 +1,1 @@
+Run bower install to install dependencies.
