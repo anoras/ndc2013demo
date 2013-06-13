@@ -67,11 +67,7 @@ window.addEventListener('load', function () {
                 y: 64
             });
             this.add('2d, platformerControls, animation');
-            Q.input.on('up',this,function() {
-                Q.audio.play('jump.mp3');
-            });
             Q.input.on('fire', this, function() {
-                Q.audio.play('fireball.mp3');
                 this.stage.insert(new Q.Fireball({
                     x: this.p.x + (this.p.direction === 'left' ? -32 : 32 ),
                     y: this.p.y + 8,
@@ -138,7 +134,7 @@ window.addEventListener('load', function () {
             }))
     });
 
-    Q.load('background.jpg, tiles.png, level1foreground.json, level1collision.json, level1background.json, hero.png, knight.png, fireball.png, jump.mp3, fireball.mp3', function () {
+    Q.load('background.jpg, tiles.png, level1foreground.json, level1collision.json, level1background.json, hero.png, knight.png, fireball.png', function () {
         Q.sheet('tiles', 'tiles.png', { tilew: 32, tileh: 32 });
         Q.sheet('hero', 'hero.png', { tilew: 32, tileh: 32 });
         Q.sheet('knight', 'knight.png', { tilew: 32, tileh: 41 });
